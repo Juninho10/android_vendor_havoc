@@ -45,8 +45,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/havoc/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/havoc/prebuilt/common/bin/50-havoc.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-havoc.sh \
+   vendor/havoc/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+   #vendor/havoc/prebuilt/common/bin/50-havoc.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-havoc.sh \
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
